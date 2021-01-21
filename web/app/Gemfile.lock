@@ -10,10 +10,11 @@ GIT
 
 GIT
   remote: git://github.com/sumoheavy/jira-ruby.git
-  revision: 6406287b9abc823a4df4cda916fe04e9a62cd146
+  revision: b592f0ee72ffdc16b8ad6eb468e846dd6b62da06
   specs:
-    jira-ruby (1.4.3)
+    jira-ruby (2.1.4)
       activesupport
+      atlassian-jwt
       multipart-post
       oauth (~> 0.5, >= 0.5.0)
 
@@ -90,6 +91,8 @@ GEM
     arachni-rpc (0.2.1.2)
       arachni-reactor (= 0.1.0)
     arel (6.0.4)
+    atlassian-jwt (0.1.1)
+      jwt (~> 1.5)
     autoprefixer-rails (7.2.1)
       execjs
     awesome_print (1.2.0)
@@ -143,7 +146,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.8)
     connection_pool (2.2.1)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -261,7 +264,7 @@ GEM
     httparty (0.15.6)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
-    i18n (0.9.1)
+    i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -297,19 +300,19 @@ GEM
     mimemagic (0.3.2)
     mini_mime (1.0.0)
     mini_portile2 (2.1.0)
-    minitest (5.10.3)
+    minitest (5.14.3)
     momentjs-rails (2.17.1)
       railties (>= 3.1)
     msgpack (0.5.8)
     multi_json (1.12.2)
     multi_xml (0.6.0)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     mysql2 (0.4.10)
     nested_form (0.3.2)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     numerizer (0.1.1)
-    oauth (0.5.3)
+    oauth (0.5.5)
     oauth2 (1.4.0)
       faraday (>= 0.8, < 0.13)
       jwt (~> 1.0)
@@ -552,7 +555,7 @@ GEM
     turbolinks-source (5.0.3)
     typhoeus (0.6.9)
       ethon (>= 0.7.1)
-    tzinfo (1.2.4)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     uglifier (4.0.1)
       execjs (>= 0.3.0, < 3)
@@ -675,4 +678,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.16.0
+   1.17.3
